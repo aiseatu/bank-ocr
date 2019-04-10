@@ -1,0 +1,14 @@
+{
+  "name": "bank-ocr",
+  "version": "1.0.0",
+  "description": "solve bank-ocr",
+  "main": "spec/bank-ocr-spec.js",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "author": "xiaokang tang",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine": "^3.4.0"
+  }
+}
