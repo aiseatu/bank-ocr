@@ -8,8 +8,9 @@ const convertText = function(text){
     }
     entries.push(entry);
   }
-  console.log(entries);
-  return entries.map((entry) => {
+  //console.log(entries);
+  let result;
+  entries.map((entry) => {
     let lines = entry.split("\n");
     let chars = [];
     for(let charNum = 0; charNum < 27; charNum = charNum + 3){
@@ -19,31 +20,59 @@ const convertText = function(text){
       }
       chars.push(char);
     }
-    console.log(chars);
+    //console.log(chars);
     const numbers = [
       [" _ ",
        "| |",
        "|_|"],
       ["   ",
        "  |",
-       "  |"]
+       "  |"],
+      [" _ ",
+       " _|",
+       "|_ ",],
+      [" _ ",
+       " _|",
+       " _|"],
+      ["   ",
+       "|_|",
+       "  |"],
+      [" _ ",
+       "|_ ",
+       " _|"],
+      [" _ ",
+       "|_ ",
+       "|_|"],
+      [" _ ",
+       "  |",
+       "  |"],
+      [" _ ",
+       "|_|",
+       "|_|"],
+      [" _ ",
+       "|_|",
+       " _|"]
     ]
     let digits = [];
     chars.map((char) => {
-      //console.log(char);
-
-      //console.log(numbers[0].join(""));
-      //console.log(numbers[1].join(""));
-      if(char === numbers[0].join("")){
-        digits.push(0);
-      } else if(char === numbers[1].join("")){
-        digits.push(1);
+      for(let i=0; i<10; i++){
+        if(char === numbers[i].join("")){
+          digits.push(i);
+        }
       }
+    //   if(char === numbers[0].join("")){
+    //     digits.push(0);
+    //   } else if(char === numbers[1].join("")){
+    //     digits.push(1);
+    //   }
+    // });
+      return digits;
     });
-    //console.log(digits);
-    return digits.join("");
+    result = digits.join("");
+    console.log(result);
   });
-
+ return result;
 }
+
 
 module.exports = {convertText}
