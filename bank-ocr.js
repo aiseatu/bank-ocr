@@ -71,6 +71,7 @@ const convertText = function(text){
     result = digits.join("");
     //console.log(result);
   });
+ console.log(result);
  return result;
 }
 

@@ -2,7 +2,7 @@
   "name": "bank-ocr",
   "version": "1.0.0",
   "description": "solve bank-ocr",
-  "main": "spec/bank-ocr-spec.js",
+  "main": "index.js",
   "scripts": {
     "test": "jasmine"
   },
