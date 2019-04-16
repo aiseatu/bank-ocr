@@ -69,7 +69,7 @@ const convertText = function(text){
       return digits;
     });
     result = digits.join("");
-    console.log(result);
+    //console.log(result);
   });
  return result;
 }
