@@ -6,4 +6,6 @@
 
 • Test with Jasmine
 
-• To test program, please install Node.js, npm and Jasmine-node (`npm install --save-dev jasmine`). Once installed, run `npm test` to test program.
+• To run program, please have node.js and npm. In `index.js` file, enter text that needs to be coverted as `ocr.convertText(text)`, and run `node index.js` in terminal to see the result logged out in terminal.
+
+• To test program, please install Jasmine-node (`npm install --save-dev jasmine`). Once installed, run `npm test` to test program.
